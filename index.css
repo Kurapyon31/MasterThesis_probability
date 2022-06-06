@@ -34,7 +34,7 @@ a:hover {
     background: #0090aa;
 }
 .cat1 {
-    background: url(/picture/index1.png) no-repeat top center;
+    background: url(https://github.com/Kurapyon31/MasterThesis_probability/blob/main/picture/index1.png?raw=true) no-repeat top center;
     background-size: cover;
     color: rgba(255,255,255,.7);
 }
