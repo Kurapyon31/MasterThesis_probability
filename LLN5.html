@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLN5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0
+      }
+    </style>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/css/6-1-7.css">
+    <link rel="stylesheet" href="LLN5.css">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted){window.location='LLN6.html';}"
+    ></iframe>
+  </head>
+
+  <body>
+    <!--
+    <div class="header">
+        <p><img src="/picture/LLN4_header.png" class="header_pic"></p>
+        <a href="LLN4.html"><i class="back_to_before" ></i> ◀ 戻る</a>
+    </div>
+    -->
+    <!--左右を包括するid-->
+    <div id="All">
+        <!--画面左側-->
+        <div id="left" class="left">
+            <p><img src="/picture/LLN5_question.png" class="question_pic"></p>
+            <div class="selectMODE">
+                <li><a onclick="makeRightField(1)"><img src="/picture/LLN5_tagEX.png" class="MODEtag"></a></li>
+                <li><a onclick="makeRightField(2)"><img src="/picture/LLN5_tagGr.png" class="MODEtag"></a></li>
+                <li><a onclick="makeRightField(3)"><img src="/picture/LLN5_tagMe.png" class="MODEtag"></a></li>
+            </div>
+            <p><a href="LLN5.html"><img src="/picture/LLN5_reset.png" class="reset_pic"></a></p>
+            <p><a onclick="makeRightField(4)"><img src="/picture/LLN5_explain.png" class="explain_pic"></a></p>
+        </div>
+        <!--画面右側-->
+        <div id="right">
+            <div id='app'></div>
+            <script type="text/javascript" src="/js/LLN5.js"></script>
+        </div>
+    </div>
+    <!--実験フィールド以下-->
+    <div>
+      <p><img src="/picture/LLN4_subheader.png" class="header_pic"></p>
+    </div>
+    <form
+      class="c-form" 
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeJSwOttpG6GLIcU9WUG1JoM38auvcaUQ5wySm3ZjsBO6uFHQ/formResponse"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-name">解答者番号<span class="c-form__required">必須</span></label>
+        <input
+          name="entry.425078069"
+          class="c-form__input"
+          id="field-name"
+          placeholder="《半角》数字で入力"
+          type="text"
+          required="required"
+        />
+      </div>
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-answer4">実験メモを書き残そう！</label>
+        <textarea
+          name="entry.600745073"
+          class="c-form__input"
+          id="field-answer4"
+          placeholder="[ 送信する ] を押すと実験データが消えるから注意してね！"
+        ></textarea>
+      </div>
+      <div class="c-form__submit">
+        <button type="submit">送信する</button>
+      </div>
+    </form>
+    <div>
+      <p></p>
+    </div>
+  </body>
+</html>
