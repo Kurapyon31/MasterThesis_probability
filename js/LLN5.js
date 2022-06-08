@@ -78,7 +78,7 @@ app.stage.addChild(Graph_PLOTtag);
 
 // タグの説明（最初開いた時用）
 //const tagHow = new PIXI.Sprite.from(PIXI.Texture.fromImage("https://github.com/Kurapyon31/MasterThesis_probability/blob/main/picture/LLN5_tagHow.png?raw=true"));
-const tagHow = new PIXI.Sprite.from('LLN5_tagHow.png');
+const tagHow = new PIXI.Sprite.from(PIXI.Texture.fromImage("https://github.com/Kurapyon31/MasterThesis_probability/blob/main/picture/LLN5_tagHow.png?raw=true"));
 tagHow.x = field_width*0.1; // 横座標の設定
 tagHow.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
 tagHow.width = field_width*0.8;
