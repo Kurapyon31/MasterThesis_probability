@@ -77,8 +77,6 @@ const Graph_PLOTtag = new PIXI.Container();
 app.stage.addChild(Graph_PLOTtag);
 
 // タグの説明（最初開いた時用）
-//const tagHow = new PIXI.Sprite.from(PIXI.Texture.fromImage("https://github.com/Kurapyon31/MasterThesis_probability/blob/main/picture/LLN5_tagHow.png?raw=true"));
-//const tagHow = new PIXI.Sprite.from(PIXI.Texture.fromImage("https://github.com/Kurapyon31/MasterThesis_probability/blob/main/picture/LLN5_tagHow.png?raw=true"));
 const tagHow = new PIXI.Sprite.from("LLN5_tagHow.png");
 tagHow.x = field_width*0.1; // 横座標の設定
 tagHow.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
@@ -125,7 +123,7 @@ function makeRightField(ModeJudge){
         ExplainBack.endFill();
         Explain.addChild(ExplainBack); // ステージに追加する
         // タグの説明
-        const tagHow2 = new PIXI.Sprite.from('/picture/LLN5_tagHow.png');
+        const tagHow2 = new PIXI.Sprite.from('LLN5_tagHow.png');
         tagHow2.x = field_width*0.1; // 横座標の設定
         tagHow2.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
         tagHow2.width = field_width*0.8;
@@ -157,56 +155,56 @@ function makeGraphField(){
     GraphBack.endFill();
     Graph.addChild(GraphBack); // ステージに追加する
     // グラフ軸
-    const GrBack = new PIXI.Sprite.from('/picture/LLN5_GrBack.png');
+    const GrBack = new PIXI.Sprite.from('LLN5_GrBack.png');
     GrBack.x = 0; // 横座標の設定
     GrBack.y = field_height*0.4; // 縦座標の設定
     GrBack.width = field_width*0.99;
     GrBack.height = field_height*0.55; // 画像の比率から計算
     Graph.addChild(GrBack);
     // 縦軸タイトル
-    const GrBackYtag = new PIXI.Sprite.from('/picture/LLN5_GrYtag.png');
+    const GrBackYtag = new PIXI.Sprite.from('LLN5_GrYtag.png');
     GrBackYtag.x = 0; // 横座標の設定
     GrBackYtag.y = field_height*0.37; // 縦座標の設定
     GrBackYtag.width = field_width*0.08;
     GrBackYtag.height = field_height*0.07; // 画像の比率から計算
     Graph.addChild(GrBackYtag);
     // 横軸タイトル
-    const GrBackXtag = new PIXI.Sprite.from('/picture/LLN5_GrXtag.png');
+    const GrBackXtag = new PIXI.Sprite.from('LLN5_GrXtag.png');
     GrBackXtag.x = field_width*0.9; // 横座標の設定
     GrBackXtag.y = field_height*0.9; // 縦座標の設定
     GrBackXtag.width = field_width*0.08;
     GrBackXtag.height = field_height*0.07; // 画像の比率から計算
     Graph.addChild(GrBackXtag);
     // 理論値ライン
-    const GrBackLine = new PIXI.Sprite.from('/picture/LLN5_GrBackLine.png');
+    const GrBackLine = new PIXI.Sprite.from('LLN5_GrBackLine.png');
     GrBackLine.x = field_width*0.9; // 横座標の設定
     GrBackLine.y = field_height*0.65; // 縦座標の設定
     GrBackLine.width = field_width*0.1;
     GrBackLine.height = GrBackLine.width*278/210; // 画像の比率から計算
     Graph.addChild(GrBackLine);
     // 目盛り「1」
-    const GrPROB1 = new PIXI.Sprite.from('/picture/LLN5_Gr1.png');
+    const GrPROB1 = new PIXI.Sprite.from('LLN5_Gr1.png');
     GrPROB1.x = field_width*0.01; // 横座標の設定
     GrPROB1.y = field_height*0.42; // 縦座標の設定
     GrPROB1.width = field_width*0.05;
     GrPROB1.height = GrPROB1.width*96/89; // 画像の比率から計算
     Graph.addChild(GrPROB1);
     // 目盛り「0」
-    const GrPROB0 = new PIXI.Sprite.from('/picture/LLN5_Gr0.png');
+    const GrPROB0 = new PIXI.Sprite.from('LLN5_Gr0.png');
     GrPROB0.x = field_width*0.001; // 横座標の設定
     GrPROB0.y = field_height*0.94; // 縦座標の設定
     GrPROB0.width = field_width*0.05;
     GrPROB0.height = GrPROB0.width*96/89; // 画像の比率から計算
     Graph.addChild(GrPROB0);
     // [詳細表示の変更]
-    const GrTRtitle = new PIXI.Sprite.from('/picture/LLN5_GrTRtitle.png');
+    const GrTRtitle = new PIXI.Sprite.from('LLN5_GrTRtitle.png');
     GrTRtitle.x = field_width*0.06; // 横座標の設定
     GrTRtitle.y = field_height*0.1; // 縦座標の設定
     GrTRtitle.width = field_width*0.4;
     GrTRtitle.height = GrTRtitle.width*97/630; // 画像の比率から計算
     Graph.addChild(GrTRtitle);
     // [左三角]
-    const GrTRleft = new PIXI.Sprite.from('/picture/LLN5_GrTRleft.png');
+    const GrTRleft = new PIXI.Sprite.from('LLN5_GrTRleft.png');
     GrTRleft.x = field_width*0.06; // 横座標の設定
     GrTRleft.y = field_height*0.2; // 縦座標の設定
     GrTRleft.width = field_width*0.1;
@@ -216,7 +214,7 @@ function makeGraphField(){
     GrTRleft.buttonMode = true;
     GrTRleft.on("pointertap", clickL);
     // [右三角]
-    const GrTRright = new PIXI.Sprite.from('/picture/LLN5_GrTRright.png');
+    const GrTRright = new PIXI.Sprite.from('LLN5_GrTRright.png');
     GrTRright.x = field_width*0.365; // 横座標の設定
     GrTRright.y = field_height*0.2; // 縦座標の設定
     GrTRright.width = field_width*0.1;
@@ -229,28 +227,28 @@ function makeGraphField(){
     makeGraphPlot(probTrans.length);
 
     // ノート
-    const ExNote = new PIXI.Sprite.from('/picture/LLN5_ExNote.png');
+    const ExNote = new PIXI.Sprite.from('LLN5_ExNote.png');
     ExNote.x = field_width*0.428; // 横座標の設定
     ExNote.y = 0; // 縦座標の設定
     ExNote.width = field_width*0.645;
     ExNote.height = field_height*0.45;
     Graph.addChild(ExNote);
     // ノート文字
-    const ExNote1 = new PIXI.Sprite.from('/picture/LLN5_ExNote1.png');
+    const ExNote1 = new PIXI.Sprite.from('LLN5_ExNote1.png');
     ExNote1.x = field_width*0.6; // 横座標の設定
     ExNote1.y = field_height*0.03; // 縦座標の設定
     ExNote1.width = field_width*0.355;
     ExNote1.height = field_height*0.13;
     Graph.addChild(ExNote1);
     //
-    const ExNote2 = new PIXI.Sprite.from('/picture/LLN5_ExNote2.png');
+    const ExNote2 = new PIXI.Sprite.from('LLN5_ExNote2.png');
     ExNote2.x = field_width*0.6; // 横座標の設定
     ExNote2.y = field_height*0.15; // 縦座標の設定
     ExNote2.width = field_width*0.355;
     ExNote2.height = field_height*0.09;
     Graph.addChild(ExNote2);
     //
-    const ExNote3 = new PIXI.Sprite.from('/picture/LLN5_ExNote3.png');
+    const ExNote3 = new PIXI.Sprite.from('LLN5_ExNote3.png');
     ExNote3.x = field_width*0.6; // 横座標の設定
     ExNote3.y = field_height*0.25; // 縦座標の設定
     ExNote3.width = field_width*0.355;
@@ -452,42 +450,42 @@ function makeExperimentField(){
     ExperimentBack.endFill();
     Experiment.addChild(ExperimentBack); // ステージに追加する
     // 袋(CLOSE)
-    const ExBag = new PIXI.Sprite.from('/picture/LLN5_ExBag.png');
+    const ExBag = new PIXI.Sprite.from('LLN5_ExBag.png');
     ExBag.x = 0; // 横座標の設定
     ExBag.y = field_height*0.35; // 縦座標の設定
     ExBag.width = field_width*0.6;
     ExBag.height = field_height*0.6;
     Experiment_Bag.addChild(ExBag);
     // ノート
-    const ExNote = new PIXI.Sprite.from('/picture/LLN5_ExNote.png');
+    const ExNote = new PIXI.Sprite.from('LLN5_ExNote.png');
     ExNote.x = field_width*0.428; // 横座標の設定
     ExNote.y = 0; // 縦座標の設定
     ExNote.width = field_width*0.645;
     ExNote.height = field_height*0.45;
     Experiment_Note.addChild(ExNote);
     // ノート文字
-    const ExNote1 = new PIXI.Sprite.from('/picture/LLN5_ExNote1.png');
+    const ExNote1 = new PIXI.Sprite.from('LLN5_ExNote1.png');
     ExNote1.x = field_width*0.6; // 横座標の設定
     ExNote1.y = field_height*0.03; // 縦座標の設定
     ExNote1.width = field_width*0.355;
     ExNote1.height = field_height*0.13;
     Experiment_Note.addChild(ExNote1);
     //
-    const ExNote2 = new PIXI.Sprite.from('/picture/LLN5_ExNote2.png');
+    const ExNote2 = new PIXI.Sprite.from('LLN5_ExNote2.png');
     ExNote2.x = field_width*0.6; // 横座標の設定
     ExNote2.y = field_height*0.15; // 縦座標の設定
     ExNote2.width = field_width*0.355;
     ExNote2.height = field_height*0.09;
     Experiment_Note.addChild(ExNote2);
     //
-    const ExNote3 = new PIXI.Sprite.from('/picture/LLN5_ExNote3.png');
+    const ExNote3 = new PIXI.Sprite.from('LLN5_ExNote3.png');
     ExNote3.x = field_width*0.6; // 横座標の設定
     ExNote3.y = field_height*0.25; // 縦座標の設定
     ExNote3.width = field_width*0.355;
     ExNote3.height = field_height*0.18;
     Experiment_Note.addChild(ExNote3);
     // 決定ボタン
-    const ExSelect = new PIXI.Sprite.from('/picture/LLN5_ExSelect.png');
+    const ExSelect = new PIXI.Sprite.from('LLN5_ExSelect.png');
     ExSelect.x = field_width*0.65; // 横座標の設定
     ExSelect.y = field_height*0.65; // 縦座標の設定
     ExSelect.width = field_width*0.3;
@@ -497,7 +495,7 @@ function makeExperimentField(){
     ExSelect.buttonMode = true;
     ExSelect.on("pointertap", addSELECT); // [SELECT]を押したらaddSELECTが起こる
     // 決定ボタン説明
-    const ExSelectExplain = new PIXI.Sprite.from('/picture/LLN5_ExSelectExplain.png');
+    const ExSelectExplain = new PIXI.Sprite.from('LLN5_ExSelectExplain.png');
     ExSelectExplain.x = field_width*0.6; // 横座標の設定
     ExSelectExplain.y = field_height*0.48; // 縦座標の設定
     ExSelectExplain.width = field_width*0.4;
@@ -571,21 +569,21 @@ function makePostExperimentField(m,n){ // m,nは選択した玉のポジショ�
     Experiment_SELECT.removeChildren(); // SELECTボタンの消去
 
     // 袋(OPEN)
-    const ExBagOPEN = new PIXI.Sprite.from('/picture/LLN5_ExBagOPEN.png');
+    const ExBagOPEN = new PIXI.Sprite.from('LLN5_ExBagOPEN.png');
     ExBagOPEN.x = 0; // 横座標の設定
     ExBagOPEN.y = field_height*0.4; // 縦座標の設定
     ExBagOPEN.width = field_width*0.6;
     ExBagOPEN.height = field_height*0.55;
     Experiment_Bag.addChild(ExBagOPEN);
     // モクモク
-    const ExMOKUMOKU = new PIXI.Sprite.from('/picture/LLN5_ExMOKUMOKU2.png');
+    const ExMOKUMOKU = new PIXI.Sprite.from('LLN5_ExMOKUMOKU2.png');
     ExMOKUMOKU.x = field_width*0.08; // 横座標の設定
     ExMOKUMOKU.y = 0; // 縦座標の設定
     ExMOKUMOKU.width = field_width*0.45;
     ExMOKUMOKU.height = field_height*0.45;
     Experiment_Bag.addChild(ExMOKUMOKU);
     // [NEXT]ボタン
-    const ExNext = new PIXI.Sprite.from('/picture/LLN5_ExNext.png');
+    const ExNext = new PIXI.Sprite.from('LLN5_ExNext.png');
     ExNext.x = field_width*0.65; // 横座標の設定
     ExNext.y = field_height*0.65; // 縦座標の設定
     ExNext.width = field_width*0.3;
@@ -687,14 +685,14 @@ function addNEXT(){
     Experiment_PostBall.removeChildren(); // ボールの消去
     Experiment_SELECT.removeChildren(); // SELECTボタンの消去
     // 袋(CLOSE)
-    const ExBag = new PIXI.Sprite.from('/picture/LLN5_ExBag.png');
+    const ExBag = new PIXI.Sprite.from('LLN5_ExBag.png');
     ExBag.x = 0; // 横座標の設定
     ExBag.y = field_height*0.35; // 縦座標の設定
     ExBag.width = field_width*0.6;
     ExBag.height = field_height*0.6;
     Experiment_Bag.addChild(ExBag);
     // 決定ボタン
-    const ExSelect = new PIXI.Sprite.from('/picture/LLN5_ExSelect.png');
+    const ExSelect = new PIXI.Sprite.from('LLN5_ExSelect.png');
     ExSelect.x = field_width*0.65; // 横座標の設定
     ExSelect.y = field_height*0.65; // 縦座標の設定
     ExSelect.width = field_width*0.3;
@@ -704,7 +702,7 @@ function addNEXT(){
     ExSelect.buttonMode = true;
     ExSelect.on("pointertap", addSELECT); // [SELECT]を押したらaddSELECTが起こる
     // 決定ボタン説明
-    const ExSelectExplain = new PIXI.Sprite.from('/picture/LLN5_ExSelectExplain.png');
+    const ExSelectExplain = new PIXI.Sprite.from('LLN5_ExSelectExplain.png');
     ExSelectExplain.x = field_width*0.6; // 横座標の設定
     ExSelectExplain.y = field_height*0.48; // 縦座標の設定
     ExSelectExplain.width = field_width*0.4;
@@ -913,7 +911,7 @@ function makeMemoField(){
     MemoBack.endFill();
     Memo.addChild(MemoBack); // ステージに追加する
     // メモのポイント
-    const memoPoint = new PIXI.Sprite.from('/picture/LLN5_Memo_point.png');
+    const memoPoint = new PIXI.Sprite.from('LLN5_Memo_point.png');
     memoPoint.x = field_width*0.1; // 横座標の設定
     memoPoint.y = (field_height-((1029*field_width)*0.8/1580))/2; // 縦座標の設定
     memoPoint.width = field_width*0.8;
