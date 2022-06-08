@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+/*==================
+header
+====================*/
+.header {
+    position: relative;
+}
+
+.header_pic {
+    width: 100%;
+}
+
+.header a {/*aタグを画像の真ん中に*/
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*以下装飾*/
+    margin:0;/*余計な隙間を除く*/
+    font-size: 24px;/*文字サイズ*/
+    border: solid white 2px; /*線で囲う*/
+    padding: 7px;/*文字と線の間の余白*/
+    color: white;/*文字色*/
+    text-decoration: none;/*下線を表示させない*/
+} 
+
+.header a:hover{/*カーソルを当てたとき*/
+    background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+}
+
+.subheader {
+    position: relative;
+    margin-top: -3%;
+}
+
+.subheader_pic {
+    width: 80%;
+}
+
+
+/*==================
+左右2分割の設定
+====================*/
+#child1 {
+    /*background-color: rgb(217, 245, 254);*/
+    font-size: 20px;
+}
+#child2 {
+    /*background-color: rgb(209, 255, 209);*/
+    font-size: 20px;
+}
+
+.child_header p{
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    #parent {
+    display: flex;
+    }
+    #child1 {
+    flex-grow: 1;
+    }
+    #child2 {
+    flex-grow: 1;
+    }
+}
+
+/*==================
+スクロールの設定
+====================*/
+.listq1 {
+    width: 100%;                /* 横幅を指定 */
+    height: 300px;               /* 縦幅を指定 */
+    border: 1px solid #000;      /* わかりやすくボーダーを引く */
+    overflow-y: scroll;          /* 縦方向にスクロール可能にする */
+  }
+
+.listq2 {
+    width: 100%;                /* 横幅を指定 */
+    height: 300px;               /* 縦幅を指定 */
+    border: 1px solid #000;      /* わかりやすくボーダーを引く */
+    overflow-y: scroll;          /* 縦方向にスクロール可能にする */
+  }
+
+.listq1 li:nth-child(even){
+    background-color:rgb(213, 211, 211); /*偶数行だけ背景色変更*/
+}
+.listq2 li:nth-child(even){
+    background-color:rgb(213, 211, 211); /*偶数行だけ背景色変更*/
+}
+
+/*==================================================
+入力用フォームのためのcss
+===================================*/
+.c-form {
+	max-width: 95%;
+	margin: 0 auto;
+}
+.c-form__item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+	padding: 10px;
+}
+.c-form__label {
+	width: 90%;
+  font-size: 20px;
+}
+.c-form__input {
+	width: 90%;
+	font-size: 16px;
+	border: solid 1px #333;
+	border-radius: 4px;
+}
+.c-form__input:focus-visible {
+	outline: darkgreen auto 1px;
+}
+.c-form__required {
+	color: #fff;
+	background-color:darkgreen;
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+	height: 160px;
+}
+.c-form__submit {
+	text-align: center;
+}
+.c-form__submit button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color:darkgreen;
+	border: solid 1px darkgreen;
+	border-radius: 4px;
+	padding: 5px 32px;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.c-form__submit button:hover {
+	color: darkgreen;
+	background-color: transparent;
+}
+
+@media (min-width: 640px) {
+	.c-form__item {
+		flex-wrap: nowrap;
+	}
+	.c-form__label {
+		width: 40%;
+	}
+	.c-form__input {
+		width: 55%;
+	}
+}
+
+.yourAnswerWas{
+    margin-left: 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:honeydew;
+    color:rgb(59, 73, 33);
+    border-radius: 4px;
+	padding: 5px 5px;
+}
+
+/*ここから新しく挑戦中//////////////////////*/
+.container{
+	display: block;
+	position: relative;
+	margin: 40px auto;
+	height: auto;
+	width: 90%;
+	padding: 20px;
+	background: #2f3337;
+}
+  
+h2 {
+	color: #f9f7f7;
+}
+  
+.container ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+  
+.container ul li{
+	color: #AAAAAA;
+	display: block;
+	position: relative;
+	float: left;
+	width: 90%;
+	height: auto;
+	/*border-bottom: 1px solid rgb(252, 251, 236);*/
+}
+  
+.container ul li input[type=radio]{
+	position: absolute;
+	visibility: hidden;
+}
+  
+.container ul li label{
+	display: block;
+	position: relative;
+	font-weight: 300;
+	font-size: 24px;
+	padding: 15px 15px 15px 70px;
+	margin: 10px auto;
+	height: auto;
+	z-index: 9;
+	cursor: pointer;
+	/*-webkit-transition: all 0.25s linear;*/
+}
+  
+.container ul li:hover label{
+	color: #FFFFFF;
+}
+  
+.container ul li .check{
+	display: block;
+	position: absolute;
+	border: 5px solid #AAAAAA;
+	border-radius: 100%;
+	height: 35px;
+	width: 35px;
+	top: 30px;
+	left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+  
+.container ul li:hover .check {
+	border: 5px solid #FFFFFF;
+}
+  
+.container ul li .check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	top: 5px;
+	left: 5px;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+  
+.container input[type=radio]:checked ~ .check {
+	border: 5px solid #fff781;
+}
+
+.container input[type=radio]:checked ~ .check::before{
+	background:  #fff781;
+}
+  
+.container input[type=radio]:checked ~ label{
+	color:  #fff781;
+}
+
+
+/*ここまで/////////////////////////////*/
+
+
+/*==================
+TABの設定
+====================*/
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tab li a{
+	display: block;
+	background:#ddd;
+	margin:0 2px;
+	padding:10px 20px;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+	background:#fff;
+}
+
+
+/*エリアの表示非表示と形状*/
+.area {
+	display: none;/*はじめは非表示*/
+	opacity: 0;/*透過0*/
+	background: #fff;
+	padding:50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+    display: block;/*表示*/
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
