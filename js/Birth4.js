@@ -78,7 +78,7 @@ const Graph_PLOTtag = new PIXI.Container();
 app.stage.addChild(Graph_PLOTtag);
 
 // タグの説明（最初開いた時用）
-const tagHow = new PIXI.Sprite.from('/picture/Birth4_tagHow_re.png');
+const tagHow = new PIXI.Sprite.from('Birth4_tagHow_re.png');
 tagHow.x = field_width*0.1; // 横座標の設定
 tagHow.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
 tagHow.width = field_width*0.8;
