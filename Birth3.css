@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*==================
+header
+====================*/
+.header {
+    position: relative;
+}
+
+.header_pic {
+    width: 100%;
+}
+
+.header a {/*aタグを画像の真ん中に*/
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /*以下装飾*/
+    margin:0;/*余計な隙間を除く*/
+    font-size: 24px;/*文字サイズ*/
+    border: solid white 2px; /*線で囲う*/
+    padding: 7px;/*文字と線の間の余白*/
+    color: white;/*文字色*/
+    text-decoration: none;/*下線を表示させない*/
+} 
+
+.header a:hover{/*カーソルを当てたとき*/
+    background: rgba(255, 255, 255, 0.3);/*背景を半透明に*/
+}
+
+.subheader {
+    position: relative;
+    margin-top: -3%;
+}
+
+.subheader_pic {
+    width: 70%;
+}
+
+/*==================
+文字列
+====================*/
+.c-form {
+	max-width: 95%;
+	margin: 0 auto;
+    text-align:center;
+}
