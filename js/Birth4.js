@@ -78,7 +78,7 @@ const Graph_PLOTtag = new PIXI.Container();
 app.stage.addChild(Graph_PLOTtag);
 
 // タグの説明（最初開いた時用）
-const tagHow = new PIXI.Sprite.from('Birth4_tagHow_re.png');
+const tagHow = new PIXI.Sprite.from("Birth4_tagHow_re.png");
 tagHow.x = field_width*0.1; // 横座標の設定
 tagHow.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
 tagHow.width = field_width*0.8;
@@ -125,7 +125,7 @@ function makeRightField(ModeJudge){
        ExplainBack.endFill();
        Explain.addChild(ExplainBack); // ステージに追加する
        // タグの説明
-       const tagHow2 = new PIXI.Sprite.from('/picture/Birth4_tagHow_re.png');
+       const tagHow2 = new PIXI.Sprite.from("Birth4_tagHow_re.png");
        tagHow2.x = field_width*0.1; // 横座標の設定
        tagHow2.y = (field_height-((1125*field_width)*0.8/1626))/2; // 縦座標の設定
        tagHow2.width = field_width*0.8;
@@ -308,56 +308,56 @@ function makeGraphField(){
     GraphBack.endFill();
     Graph.addChild(GraphBack); // ステージに追加する
     // グラフ軸
-    const GrBack = new PIXI.Sprite.from('/picture/Birth4_GrBack.png');
+    const GrBack = new PIXI.Sprite.from("Birth4_GrBack.png");
     GrBack.x = 0; // 横座標の設定
     GrBack.y = field_height*0.4; // 縦座標の設定
     GrBack.width = field_width*0.99;
     GrBack.height = field_height*0.55; // 画像の比率から計算
     Graph.addChild(GrBack);
     // 縦軸タイトル
-    const GrBackYtag = new PIXI.Sprite.from('/picture/LLN5_GrYtag.png');
+    const GrBackYtag = new PIXI.Sprite.from("LLN5_GrYtag.png");
     GrBackYtag.x = 0; // 横座標の設定
     GrBackYtag.y = field_height*0.37; // 縦座標の設定
     GrBackYtag.width = field_width*0.08;
     GrBackYtag.height = field_height*0.07; // 画像の比率から計算
     Graph.addChild(GrBackYtag);
     // 横軸タイトル
-    const GrBackXtag = new PIXI.Sprite.from('/picture/Birth4_GrXtag.png');
+    const GrBackXtag = new PIXI.Sprite.from("Birth4_GrXtag.png");
     GrBackXtag.x = field_width*0.9; // 横座標の設定
     GrBackXtag.y = field_height*0.9; // 縦座標の設定
     GrBackXtag.width = field_width*0.08;
     GrBackXtag.height = field_height*0.07; // 画像の比率から計算
     Graph.addChild(GrBackXtag);
     // 理論値ライン
-    const GrBackLine = new PIXI.Sprite.from('/picture/Birth4_GrBackLine.png');
+    const GrBackLine = new PIXI.Sprite.from("Birth4_GrBackLine.png");
     GrBackLine.x = field_width*0.9; // 横座標の設定
     GrBackLine.y = field_height*0.65; // 縦座標の設定
     GrBackLine.width = field_width*0.1;
     GrBackLine.height = GrBackLine.width*220/210; // 画像の比率から計算
     Graph.addChild(GrBackLine);
     // 目盛り「1」
-    const GrPROB1 = new PIXI.Sprite.from('/picture/LLN5_Gr1.png');
+    const GrPROB1 = new PIXI.Sprite.from("LLN5_Gr1.png");
     GrPROB1.x = field_width*0.01; // 横座標の設定
     GrPROB1.y = field_height*0.42; // 縦座標の設定
     GrPROB1.width = field_width*0.05;
     GrPROB1.height = GrPROB1.width*96/89; // 画像の比率から計算
     Graph.addChild(GrPROB1);
     // 目盛り「0」
-    const GrPROB0 = new PIXI.Sprite.from('/picture/LLN5_Gr0.png');
+    const GrPROB0 = new PIXI.Sprite.from("LLN5_Gr0.png");
     GrPROB0.x = field_width*0.001; // 横座標の設定
     GrPROB0.y = field_height*0.94; // 縦座標の設定
     GrPROB0.width = field_width*0.05;
     GrPROB0.height = GrPROB0.width*96/89; // 画像の比率から計算
     Graph.addChild(GrPROB0);
     // [詳細表示の変更]
-    const GrTRtitle = new PIXI.Sprite.from('/picture/LLN5_GrTRtitle.png');
+    const GrTRtitle = new PIXI.Sprite.from("LLN5_GrTRtitle.png");
     GrTRtitle.x = field_width*0.06; // 横座標の設定
     GrTRtitle.y = field_height*0.1; // 縦座標の設定
     GrTRtitle.width = field_width*0.4;
     GrTRtitle.height = GrTRtitle.width*97/630; // 画像の比率から計算
     Graph.addChild(GrTRtitle);
     // [左三角]
-    const GrTRleft = new PIXI.Sprite.from('/picture/LLN5_GrTRleft.png');
+    const GrTRleft = new PIXI.Sprite.from("LLN5_GrTRleft.png");
     GrTRleft.x = field_width*0.06; // 横座標の設定
     GrTRleft.y = field_height*0.2; // 縦座標の設定
     GrTRleft.width = field_width*0.1;
@@ -367,7 +367,7 @@ function makeGraphField(){
     GrTRleft.buttonMode = true;
     GrTRleft.on("pointertap", BirthclickL);
     // [右三角]
-    const GrTRright = new PIXI.Sprite.from('/picture/LLN5_GrTRright.png');
+    const GrTRright = new PIXI.Sprite.from("LLN5_GrTRright.png");
     GrTRright.x = field_width*0.365; // 横座標の設定
     GrTRright.y = field_height*0.2; // 縦座標の設定
     GrTRright.width = field_width*0.1;
@@ -380,21 +380,21 @@ function makeGraphField(){
     BirthGraphPlot(Birthprobtrans.length);
 
     // ノート
-    const ExNote = new PIXI.Sprite.from('/picture/LLN5_ExNote.png');
+    const ExNote = new PIXI.Sprite.from("LLN5_ExNote.png");
     ExNote.x = field_width*0.428; // 横座標の設定
     ExNote.y = 0; // 縦座標の設定
     ExNote.width = field_width*0.645;
     ExNote.height = field_height*0.3;
     Graph.addChild(ExNote);
     // ノート文字
-    const ExNote1 = new PIXI.Sprite.from('/picture/Birth4_NoteALL_Gr.png');
+    const ExNote1 = new PIXI.Sprite.from("Birth4_NoteALL_Gr.png");
     ExNote1.x = field_width*0.6; // 横座標の設定
     ExNote1.y = field_height*0.039; // 縦座標の設定
     ExNote1.width = field_width*0.355;
     ExNote1.height = ExNote1.width*327/614; // 画像の比率から計算
     Graph.addChild(ExNote1);
     // [小数第４位で四捨五入]の表示
-    const ExNote2 = new PIXI.Sprite.from('/picture/Birth4_GrHosoku.png');
+    const ExNote2 = new PIXI.Sprite.from("Birth4_GrHosoku.png");
     ExNote2.x = field_width*0.6; // 横座標の設定
     ExNote2.y = field_height*0.3; // 縦座標の設定
     ExNote2.width = field_width*0.35;
@@ -424,7 +424,7 @@ function makeMemoField(){
     MemoBack.endFill();
     Memo.addChild(MemoBack); // ステージに追加する
     // メモのポイント
-    const memoPoint = new PIXI.Sprite.from('/picture/Birth4_Memo_point.png');
+    const memoPoint = new PIXI.Sprite.from("Birth4_Memo_point.png");
     memoPoint.x = field_width*0.1; // 横座標の設定
     memoPoint.y = (field_height-((1029*field_width)*0.8/1580))/2; // 縦座標の設定
     memoPoint.width = field_width*0.8;
@@ -470,21 +470,21 @@ function BirthExperimentField(n){ // nは人数
     ExperimentBack.endFill();
     Experiment.addChild(ExperimentBack); // ステージに追加する
     // ノート
-    const ExNote = new PIXI.Sprite.from('/picture/LLN5_ExNote.png');
+    const ExNote = new PIXI.Sprite.from("LLN5_ExNote.png");
     ExNote.x = field_width*0.428; // 横座標の設定
     ExNote.y = 0; // 縦座標の設定
     ExNote.width = field_width*0.645;
     ExNote.height = field_height*0.3;
     Graph.addChild(ExNote);
     // ノート文字
-    const ExNote1 = new PIXI.Sprite.from('/picture/Birth4_NoteALL.png');
+    const ExNote1 = new PIXI.Sprite.from("Birth4_NoteALL.png");
     ExNote1.x = field_width*0.6; // 横座標の設定
     ExNote1.y = field_height*0.08; // 縦座標の設定
     ExNote1.width = field_width*0.355;
     ExNote1.height = field_height*0.2;
     Graph.addChild(ExNote1);
     // [小数第４位で四捨五入]の表示
-    const ExNote2 = new PIXI.Sprite.from('/picture/Birth4_roomHosoku.png');
+    const ExNote2 = new PIXI.Sprite.from("Birth4_roomHosoku.png");
     ExNote2.x = field_width*0.6; // 横座標の設定
     ExNote2.y = field_height*0.3; // 縦座標の設定
     ExNote2.width = field_width*0.35;
@@ -493,7 +493,7 @@ function BirthExperimentField(n){ // nは人数
     //
     if(n==19){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people19.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people19.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -504,7 +504,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==23){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people23.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people23.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -515,7 +515,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==29){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people29.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people29.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -526,7 +526,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==31){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people31.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people31.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -537,7 +537,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==37){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people37.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people37.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5*1635/1363;
@@ -548,7 +548,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==41){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people41.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people41.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5*1635/1363;
@@ -559,7 +559,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==80){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_peopleMany.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_peopleMany.png"); // 人のシルエットを並べる
         ExBag.x = field_width*0.02; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -570,7 +570,7 @@ function BirthExperimentField(n){ // nは人数
     }
     else if(n==120){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_peopleMany.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_peopleMany.png"); // 人のシルエットを並べる
         ExBag.x = field_width*0.02; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -599,7 +599,7 @@ function BirthExperimentField(n){ // nは人数
     Message_ProbSHOUSU.style.fontWeight = "bolder";
     Graph.addChild(Message_ProbSHOUSU);
     // 確認ボタン
-    const ExSelect = new PIXI.Sprite.from('/picture/Birth4_check.png');
+    const ExSelect = new PIXI.Sprite.from("Birth4_check.png");
     ExSelect.x = field_width*0.65; // 横座標の設定
     ExSelect.y = field_height*0.7; // 縦座標の設定
     ExSelect.width = field_width*0.3;
@@ -609,7 +609,7 @@ function BirthExperimentField(n){ // nは人数
     ExSelect.buttonMode = true;
     ExSelect.on("pointertap", addCHECK); // [CHECK]を押したらaddCHECKが起こる
     // 確認ボタン説明
-    const ExSelectExplain = new PIXI.Sprite.from('/picture/Birth4_checkExp.png');
+    const ExSelectExplain = new PIXI.Sprite.from("Birth4_checkExp.png");
     ExSelectExplain.x = field_width*0.6; // 横座標の設定
     ExSelectExplain.y = field_height*0.5; // 縦座標の設定
     ExSelectExplain.width = field_width*0.4;
@@ -626,7 +626,7 @@ function Post_BirthExperimentField(n){ // nは集団の人数
     Experiment_SELECT.removeChildren(); // CHECKボタンの消去
 
     // [NEXT]ボタン
-    const ExNext = new PIXI.Sprite.from('/picture/LLN5_ExNext.png');
+    const ExNext = new PIXI.Sprite.from("LLN5_ExNext.png");
     ExNext.x = field_width*0.65; // 横座標の設定
     ExNext.y = field_height*0.7; // 縦座標の設定
     ExNext.width = field_width*0.3;
@@ -636,14 +636,14 @@ function Post_BirthExperimentField(n){ // nは集団の人数
     ExNext.buttonMode = true;
     ExNext.on("pointertap", addNEXT); // [NEXT]を押したら起こる
     // [NEXT]ボタン説明
-    const ExNextExplain = new PIXI.Sprite.from('/picture/Birth4_NextExp.png');
+    const ExNextExplain = new PIXI.Sprite.from("Birth4_NextExp.png");
     ExNextExplain.x = field_width*0.6; // 横座標の設定
     ExNextExplain.y = field_height*0.55; // 縦座標の設定
     ExNextExplain.width = field_width*0.4;
     ExNextExplain.height = ExNextExplain.width*(223/671);
     Experiment_SELECT.addChild(ExNextExplain);
     // 同じ誕生日の場合は色が変わる説明
-    const ExNextHosoku = new PIXI.Sprite.from('/picture/Birth4_nextHosoku_re2.png');
+    const ExNextHosoku = new PIXI.Sprite.from("Birth4_nextHosoku_re2.png");
     ExNextHosoku.x = field_width*0.62; // 横座標の設定
     ExNextHosoku.y = field_height*0.35; // 縦座標の設定
     ExNextHosoku.width = field_width*0.3;
@@ -764,7 +764,7 @@ function addNEXT(){
     //
     if(NumberPeople==19){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people19.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people19.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -773,7 +773,7 @@ function addNEXT(){
     }
     else if(NumberPeople==23){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people23.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people23.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -782,7 +782,7 @@ function addNEXT(){
     }
     else if(NumberPeople==29){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people29.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people29.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -791,7 +791,7 @@ function addNEXT(){
     }
     else if(NumberPeople==31){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people31.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people31.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -800,7 +800,7 @@ function addNEXT(){
     }
     else if(NumberPeople==37){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people37.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people37.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5*1635/1363;
@@ -809,7 +809,7 @@ function addNEXT(){
     }
     else if(NumberPeople==41){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_people41.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_people41.png"); // 人のシルエットを並べる
         ExBag.x = 0; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5*1635/1363;
@@ -818,7 +818,7 @@ function addNEXT(){
     }
     else if(NumberPeople==80){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_peopleMany.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_peopleMany.png"); // 人のシルエットを並べる
         ExBag.x = field_width*0.02; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -827,7 +827,7 @@ function addNEXT(){
     }
     else if(NumberPeople==120){
         // 人
-        const ExBag = new PIXI.Sprite.from('/picture/Birth4_peopleMany.png'); // 人のシルエットを並べる
+        const ExBag = new PIXI.Sprite.from("Birth4_peopleMany.png"); // 人のシルエットを並べる
         ExBag.x = field_width*0.02; // 横座標の設定
         ExBag.y = 0; // 縦座標の設定
         ExBag.width = field_width*0.5;
@@ -835,7 +835,7 @@ function addNEXT(){
         Experiment_Bag.addChild(ExBag);
     }
     // 確認ボタン
-    const ExSelect = new PIXI.Sprite.from('/picture/Birth4_check.png');
+    const ExSelect = new PIXI.Sprite.from("Birth4_check.png");
     ExSelect.x = field_width*0.65; // 横座標の設定
     ExSelect.y = field_height*0.7; // 縦座標の設定
     ExSelect.width = field_width*0.3;
@@ -845,7 +845,7 @@ function addNEXT(){
     ExSelect.buttonMode = true;
     ExSelect.on("pointertap", addCHECK); // [CHECK]を押したらaddCHECKが起こる
     // 確認ボタン説明
-    const ExSelectExplain = new PIXI.Sprite.from('/picture/Birth4_checkExp.png');
+    const ExSelectExplain = new PIXI.Sprite.from("Birth4_checkExp.png");
     ExSelectExplain.x = field_width*0.6; // 横座標の設定
     ExSelectExplain.y = field_height*0.5; // 縦座標の設定
     ExSelectExplain.width = field_width*0.4;
