@@ -8,8 +8,8 @@ function window_load(){
 // windowの読み込み
 window_width = window_load();
 // pixi.jsの横幅と縦幅
-field_width = window_width*0.65; // 倍率[0.65]
-field_height = window_width*0.54; // 倍率[0.54]
+field_width = window_width*0.65*1.4; // 倍率[0.65*1.4]★
+field_height = window_width*0.54*1.4; // 倍率[0.54*1.4]★
 // 文字の倍率
 ScaleMOJI = field_width/700;
 
